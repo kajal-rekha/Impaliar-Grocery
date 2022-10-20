@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
 :root {
   --color-primary: #cb7d24;
   --color-tertiary: #f06c34;
@@ -46,7 +48,7 @@ body {
   font-weight: 300;
   color: #444;
   line-height: 1.8;
-  background-color: #f3f3f3;
+  background-color: #eeeeee;
 }
 
 .container {
@@ -73,14 +75,15 @@ body {
   display: inline-block;
   font-size: 1.7rem;
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 600;
   border: none;
-  padding: 1.25rem 4rem;
+  color: #000000a8;
+  padding: 1.2rem 3rem;
   border-radius: 10rem;
   cursor: pointer;
-  color: #333;
   background-color: var(--color-primary);
   transition: all 0.3s;
+  margin-top: 3rem;
 }
 
 .btn-text:hover {
@@ -89,7 +92,6 @@ body {
 
 .section {
   padding: 15rem 3rem;
-  border-top: 1px solid #ddd;
   transition: transform 1s, opacity 1s;
 }
 
@@ -124,13 +126,10 @@ body {
   align-items: center;
   height: 9rem;
   width: 100%;
+  margin-top: 0.2rem;
   z-index: 100;
-}
-
-.nav.sticky {
   position: fixed;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 1px 4px 0px grey;
 }
 
 .nav-logo {
@@ -142,8 +141,15 @@ body {
   align-items: center;
 }
 
+.nav-item:hover a {
+  color: var(--color-primary);
+}
+
 .nav-links li:last-child a {
   font-weight: 600;
+}
+.nav-links li:last-child:hover a {
+  color: var(--light-color);
 }
 
 .nav-item {
@@ -154,7 +160,7 @@ body {
 .nav-link:visited {
   font-size: 1.7rem;
   font-weight: 400;
-  color: inherit;
+  color: var(--light-color);
   text-decoration: none;
   display: block;
   transition: all 0.3s;
@@ -168,13 +174,9 @@ body {
   color: #222;
 }
 
-.nav-link-btn:hover,
-.nav-link-btn:active {
-  color: inherit;
-  background-color: #ff7b428e;
-  color: #333;
+.navbar .logo {
+  margin-left: 7rem;
 }
-
 .nav-toggle {
   display: none;
 }
@@ -197,6 +199,7 @@ body {
   justify-content: center;
   align-items: start;
   justify-items: start;
+  margin-top: 16rem;
 }
 
 span {
@@ -226,6 +229,7 @@ h1 {
 h2 {
   font-size: 4.8rem;
   text-align: center;
+  margin-bottom: 3rem;
 }
 h3 {
   font-size: 4rem;
@@ -257,12 +261,9 @@ i {
 
 /* features */
 
-.features {
-  margin-top: 5rem;
-}
 .features .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
 }
 
@@ -300,13 +301,9 @@ i {
 
 /* cateories */
 
-.categories {
-  margin: 7rem;
-}
-
 .categories .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.5rem;
 }
 
@@ -345,15 +342,10 @@ i {
 
 /* products */
 
-.products {
-  margin-top: 7rem;
-}
-
 h5 {
   width: 3%;
   position: relative;
   top: -6px;
-
   cursor: pointer;
   color: var(--black);
   font-size: 2rem;
@@ -378,10 +370,13 @@ h5.zero:before {
 
 .swiper-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.1rem;
 }
 
+.swip {
+  margin-left: -4rem;
+}
 .products .product-slider {
   padding: 1rem;
 }
@@ -400,7 +395,7 @@ button {
   cursor: pointer;
 }
 
-.products .product-slider .box {
+.products .swiper-wrapper .box {
   padding: 3rem 2rem;
   background: #fff;
   outline: var(--outline);
@@ -550,9 +545,8 @@ button {
   display: none;
 }
 
-.review {
-  margin-top: 7rem;
-}
+/* reviwe */
+
 .review .review-slider {
   padding: 1rem;
 }
@@ -673,8 +667,10 @@ button {
 
 .footer .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 21rem;
+  align-items: center;
+  margin-left: 6rem;
 }
 
 .footer .box-container .box h3 {
@@ -741,13 +737,19 @@ button {
   color: var(--orange);
 }
 
+.footer .grocery {
+  font-weight: 600;
+  color: var(--color-tertiary-darker);
+}
+/* modal */
+
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 50rem;
-  background-color: #f3f3f3;
+  background-color: white;
   padding: 5rem 6rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 1000;
@@ -890,18 +892,19 @@ button {
 
   .nav-toggle {
     display: block;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.9rem;
+    height: 3.9rem;
     border: none;
     outline: none;
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s;
     z-index: 201;
+    color: var(--black);
   }
 
   .nav-toggle:hover {
-    color: #24cbc8;
+    color: var(--color-tertiary-darker);
   }
 
   .btn-text {
@@ -928,7 +931,8 @@ button {
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    margin-top: 8rem;
   }
 
   .features .box-container {
@@ -941,7 +945,7 @@ button {
     grid-template-columns: 1fr 1fr;
   }
   .features {
-    margin-top: 20rem;
+    margin-top: 45rem;
   }
 
   h2 {
@@ -994,6 +998,6 @@ button {
 
 @media (max-width: 468px) {
   .features {
-    margin-top: 35rem;
+    margin-top: 50rem;
   }
 }

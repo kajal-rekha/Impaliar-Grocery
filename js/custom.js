@@ -6,9 +6,7 @@
 
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-
 const btnsOpenModal = document.querySelectorAll(".btn-show-modal");
-
 const btnCloseModal = document.querySelector(".btn-close-modal");
 const nav = document.querySelector(".nav");
 const navLinks = document.querySelector(".nav-links");
@@ -22,26 +20,6 @@ const btnNow = document.querySelector(".btn");
 const cutBtn = document.querySelector(".cut");
 const select = document.querySelector(".select");
 const button = document.querySelector(".cart");
-
-/////////////////////////////////////////////////////////////////////////
-// Stick navbar
-///////////////////////////////////////////////////////////////
-const navHeight = nav.getBoundingClientRect().height;
-
-function sticky(entries) {
-  const entry = entries[0];
-
-  if (!entry.isIntersecting) nav.classList.add("sticky");
-  else nav.classList.remove("sticky");
-}
-
-const headerObserver = new IntersectionObserver(sticky, {
-  root: null, // viewport
-  threshold: 0,
-  rootMargin: `-${navHeight}px`,
-});
-
-headerObserver.observe(header);
 
 /////////////////////////////////////////////////////////////
 //  reveal section

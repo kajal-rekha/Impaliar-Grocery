@@ -5,25 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imperial Grocery</title>
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon5.png" type="image/x-icon" />
-
     <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-
     <!-- css link -->
     <link rel="stylesheet" href="style.css" />
-
     <!-- Script file -->
     <script defer src="js/custom.js"></script>
-    <script src="js/main.js"></script>
   </head>
   <body>
-    <header class="container header" id="section-0">
+    <header class="header" id="section-0">
       <!-- Navbar -->
       <nav class="nav navbar">
         <img
@@ -74,10 +69,10 @@
       </nav>
 
       <!-- Hero section -->
-      <div class="header-title">
+      <div class="header-title container">
         <div class="header-left">
           <h1>
-            Fresh and <strong class="heightlight">Organic</strong> Products For
+            Fresh and <strong class="heightlight">Organic Products </strong> For
             You
           </h1>
           <p>
@@ -87,7 +82,9 @@
             flesh food. Food comprises protein, facts, carbohydrates, vitamins,
             minerals salts and water.
           </p>
-          <button class="btn-text btn-scroll-to">Learn more</button>
+          <a href="#categories">
+            <button class="btn-text btn-scroll-to">Learn more</button>
+          </a>
         </div>
         <div class="header-right">
           <img src="images/main.jpg" class="header-img" />
@@ -136,7 +133,7 @@
     <!-- features section ends -->
 
     <!-- categories section starts  -->
-    <section class="section categories" id="categories">
+    <section class="container section categories" id="categories">
       <h2 class="heading">product <span>categories</span></h2>
 
       <div class="box-container">
@@ -173,10 +170,10 @@
     <!-- categories section ends -->
 
     <!-- products section starts  -->
-    <section class="section container products" id="products">
+    <section class="container section products" id="products">
       <h2 class="heading">our <span> products</span></h2>
       <div class="swiper product-slider">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper swip">
           <div class="item swiper-slide box">
             <img src="images/product-1.png" alt="" />
             <h3>fresh orange</h3>
@@ -260,7 +257,7 @@
     <section class="section container review" id="review">
       <h2 class="heading">customer's <span>review</span></h2>
 
-      <div class="swiper review-slider">
+      <div class="swiper review-slider review-cart">
         <div class="swiper-wrapper">
           <div class="swiper-slide box">
             <img src="images/pic-1.png" alt="" />
@@ -364,9 +361,6 @@
                   <option value="youtube">YouTube</option>
                 </select>
               </div>
-              <!-- <li class="form">
-                <a class="btn-form btn-show-modal" href="#">sign up now</a>
-              </li> -->
               <button class="btn btn-form btn-show-modal">Sign up now</button>
             </form>
           </div>
@@ -380,6 +374,7 @@
       <div class="box-container">
         <div class="box">
           <img src="images/favicon5.png" alt="" />
+          <h4 class="grocery">Imperial Grocery</h4>
           <p>
             Food comprises protein, facts, carbohydrates, vitamins, minerals
             salts and water. Most of the food items contain all these in varying
