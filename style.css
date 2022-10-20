@@ -58,11 +58,11 @@ body {
 .btn {
   display: inline-block;
   background-color: var(--color-primary);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #444;
   font-family: inherit;
   font-weight: 500;
-  padding: 1.25rem 5rem;
+  padding: 1.2rem 4.5rem;
   border-radius: 10rem;
   cursor: pointer;
   transition: all 0.3s;
@@ -90,6 +90,9 @@ body {
   opacity: 0.8;
 }
 
+.contact {
+  margin-left: 10rem;
+}
 .section {
   padding: 15rem 3rem;
   transition: transform 1s, opacity 1s;
@@ -808,7 +811,7 @@ button {
 
 .btn-close-modal {
   font-family: inherit;
-  color: inherit;
+  color: var(--color-tertiary-darker);
   position: absolute;
   top: 0.5rem;
   right: 2rem;
