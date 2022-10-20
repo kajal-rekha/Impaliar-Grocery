@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imperial Grocery</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon5.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Script file -->
+    <script defer src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="container header" id="section-0">
+      <!-- Navbar -->
+      <nav class="nav navbar">
+        <img
+          class="logo"
+          src="images/logo-img3-removebg-preview.png
+        "
+          alt="logo"
+        />
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#section-0"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-1">Features </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-2">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-3">Products </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-4">Testimonials </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-btn btn-show-modal" href="#"
+              >sign up now</a
+            >
+          </li>
+        </ul>
+        <button class="nav-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
+            />
+          </svg>
+        </button>
+        <h5><i class="fa fa-shopping-cart"></i></h5>
+      </nav>
+
+      <!-- Hero section -->
+      <div class="header-title">
+        <div class="header-left">
+          <h1>
+            Fresh and <strong class="heightlight">Organic</strong> Products For
+            You
+          </h1>
+          <p>
+            Food is the necessity of life. It provides nutrition, sustenance and
+            growth to human body. Food can be classified into cereals, pulses,
+            nuts and oilseeds, vegetable, fruits, milk and milk products and
+            flesh food. Food comprises protein, facts, carbohydrates, vitamins,
+            minerals salts and water.
+          </p>
+          <button class="btn-text btn-scroll-to">Learn more</button>
+        </div>
+        <div class="header-right">
+          <img src="images/main.jpg" class="header-img" />
+        </div>
+      </div>
+    </header>
+
+    <!-- features section starts  -->
+
+    <section class="section container features" id="features">
+      <h2 class="heading">Our <span>Features</span></h2>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/feature-img-1.png" alt="" />
+          <h3>Fresh and organic</h3>
+          <p>
+            Fress and Organic food is the necessity of life. It provides
+            nutrition, sustenance
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="images/feature-img-2.png" alt="" />
+          <h3>Free delivery</h3>
+          <p>
+            Here is the way, where Spicy and Delicious Restaurants and other
+            food stuff points have now started .
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="images/feature-img-3.png" alt="" />
+          <h3>Easy payments</h3>
+          <p>
+            Our vision is to accelerate an easy payment to achieve a sustainable
+            digital financial ecosystem.
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- categories section starts  -->
+    <section class="section categories" id="categories">
+      <h2 class="heading">product <span>categories</span></h2>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/cat-1.png" alt="" />
+          <h3>vegitables</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="images/cat-2.png" alt="" />
+          <h3>fresh fruits</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn btn-show-modal">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="images/cat-3.png" alt="" />
+          <h3>dairy products</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn btn-show-modal">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="images/cat-4.png" alt="" />
+          <h3>fresh meat</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn btn-show-modal">shop now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- categories section ends -->
+
+    <!-- products section starts  -->
+    <section class="section container products" id="products">
+      <h2 class="heading">our <span> products</span></h2>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="item swiper-slide box">
+            <img src="images/product-1.png" alt="" />
+            <h3>fresh orange</h3>
+            <p>Food is the necessity of life. It provides nutrition.</p>
+            <!-- <div class="price">$3.99/- - 10.99/-</div> -->
+            <h6>$2.19/- - 10.99/-</h6>
+            <span></span>
+            <button class="btn">Add cart</button>
+          </div>
+
+          <div class="item swiper-slide box">
+            <img src="images/product-2.png" alt="" />
+            <h3>fresh onion</h3>
+            <p>Food is the necessity of life. It provides nutrition.</p>
+            <h6>$2.19/- - 10.99/-</h6>
+            <span></span>
+            <button class="btn">Add cart</button>
+          </div>
+
+          <div class="item swiper-slide box">
+            <img src="images/product-3.png" alt="" />
+            <h3>fresh meat</h3>
+            <p>Food is the necessity of life. It provides nutrition.</p>
+            <h6>$2.19/- - 10.99/-</h6>
+            <span></span>
+            <button class="btn">Add cart</button>
+          </div>
+
+          <div class="item swiper-slide box">
+            <img src="images/product-4.png" alt="" />
+            <h3>fresh cabbage</h3>
+            <p>Food is the necessity of life. It provides nutrition.</p>
+            <h6>$2.19/- - 10.99/-</h6>
+            <span></span>
+            <button class="btn">Add cart</button>
+          </div>
+
+          <div class="item swiper-slide box">
+            <img src="images/avocado-imported (1).png" alt="" />
+            <h3>fresh avocado</h3>
+            <p>Food is the necessity of life. It provides nutrition.</p>
+            <h6>$2.19/- - 10.99/-</h6>
+            <span></span>
+            <button class="btn">Add cart</button>
+          </div>
+
+          <div class="item swiper-slide box">
+            <img src="images/product-7.png" alt="" />
+            <h3>fresh carrot</h3>
+            <p>Food is the necessity of life. It provides nutrition.</p>
+            <h6>$2.19/- - 10.99/-</h6>
+            <span></span>
+            <button class="btn">Add cart</button>
+          </div>
+
+          <div class="item swiper-slide box">
+            <img src="images/product-8.png" alt="" />
+            <h3>green lemon</h3>
+            <p>Food is the necessity of life. It provides nutrition.</p>
+            <h6>$2.19/- - 10.99/-</h6>
+            <span></span>
+            <button class="btn">Add cart</button>
+          </div>
+
+          <div class="item swiper-slide box">
+            <img src="images/product-5.png" alt="" />
+            <h3>fresh potato</h3>
+            <p>Food is the necessity of life. It provides nutrition.</p>
+            <h6>$2.19/- - 10.99/-</h6>
+            <span></span>
+            <button class="btn">Add cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="selector"></div>
+    <!-- products section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="section container review" id="review">
+      <h2 class="heading">customer's <span>review</span></h2>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="images/pic-1.png" alt="" />
+            <p>
+              When it comes to making decisions, we humans aren’t always
+              independent thinkers. From buying our morning coffee to big-ticket
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/pic-2.png" alt="" />
+            <p>
+              When it comes to making decisions, we humans aren’t always
+              independent thinkers. From buying our morning coffee to big-ticket
+            </p>
+            <h3>Sarah Parker</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/pic-3.png" alt="" />
+            <p>
+              When it comes to making decisions, we humans aren’t always
+              independent thinkers. From buying our morning coffee to big-ticket
+            </p>
+            <h3>Michelle Deer</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="images/user-2.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.
+            </p>
+            <h3>Miyah Miles</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!--===================CTA==================-->
+    <section class="section section-cta" id="cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">
+              Get your first products for free delivary!
+            </h2>
+            <p class="cta-text">
+              When you go to the grocery store, what types of produce, otherwise
+              known as fruits and vegetables, do you buy? Do you look for the
+              “organic” labels, or stick with the conventional options? You may
+              question the difference between the two.
+            </p>
+            <form action="#" class="cta-form">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" required />
+              </div>
+              <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required />
+              </div>
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select id="select-where">
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends</option>
+                  <option value="family">Family</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="youtube">YouTube</option>
+                </select>
+              </div>
+              <!-- <li class="form">
+                <a class="btn-form btn-show-modal" href="#">sign up now</a>
+              </li> -->
+              <button class="btn btn-form btn-show-modal">Sign up now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section starts  -->
+
+    <section class="section container footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>groco <i class="fas fa-shopping-basket"></i></h3>
+          <p>
+            Food comprises protein, facts, carbohydrates, vitamins, minerals
+            salts and water. Most of the food items contain all these in varying
+            properties.
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +123-456-7890
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +111-222-3333
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-envelope"></i> kajalrekha@gmail.com
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-map-marker-alt"></i> Bandarban, Bangladesh - 40010
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> home
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> features
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i>categories
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> products
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-arrow-right"></i> tesmimonial
+          </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span> Kajal Rekha </span> | all rights reserved
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- Modal -->
+    <div class="modal hidden">
+      <button class="btn-close-modal">&times;</button>
+      <h2 class="modal-header">Registration Form</h2>
+      <form class="modal-form">
+        <label>First Name </label>
+        <input type="text" placeholder="first name" />
+        <label>Last Name</label>
+        <input type="text" placeholder="last name" />
+        <label>Email Address</label>
+        <input type="email" placeholder="your email" />
+        <label>Password</label>
+        <input type="password" placeholder="your password" />
+        <button class="btn">Create account &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- submodal -->
+    <div class="submodal hidden">
+      <button class="btn-close-modal">&times;</button>
+      <h2 class="modal-heading">Registration Sucessfull!</h2>
+      <h5>
+        Stay beings with us..... <br />
+        Thank you
+      </h5>
+    </div>
+    <div class="overlay2 hidden"></div>
+  </body>
+</html>
