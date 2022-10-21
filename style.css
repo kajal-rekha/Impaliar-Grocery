@@ -140,6 +140,9 @@ body {
   align-items: center;
 }
 
+.nav-link {
+  letter-spacing: 1px;
+}
 .nav-item:hover a {
   color: var(--color-primary);
 }
@@ -655,7 +658,12 @@ button {
   border-radius: 12px;
   background: white;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+}
+
+.section-cta .btn-form:hover {
+  color: var(--light-color);
 }
 .footer {
   background: #fff;
@@ -911,25 +919,25 @@ button {
     max-width: 115rem;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10rem;
+    gap: 1rem;
     place-items: center;
     text-align: center;
+    margin-top: 10rem;
+    flex: 1;
   }
 
-  /* .btn {
-    padding: 1rem 2.5rem;
-    border-radius: 2rem;
-  } */
+  .header-left {
+    order: 1;
+    width: 80%;
+  }
 
-  .header-title {
-    flex: 1;
-    max-width: 110rem;
-    margin-top: 3rem;
+  .section {
+    padding: 5rem 2rem;
   }
 
   h1 {
     font-size: 4rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
 
   .features .box-container {
@@ -948,6 +956,19 @@ button {
   h2 {
     font-size: 3rem;
   }
+
+  .footer .box-container {
+    grid-template-columns: 1fr;
+    width: 80%;
+    align-items: center;
+  }
+
+  .box-container .box img {
+    margin-left: 20rem;
+  }
+  .box-container .box .grocery {
+    margin-left: 14rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -962,7 +983,7 @@ button {
   }
 
   .features {
-    margin-top: 30rem;
+    margin-top: 50rem;
   }
 
   h2 {
@@ -975,6 +996,10 @@ button {
   .categories .box-container,
   .swiper-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .features {
+    margin-top: 16rem;
   }
 
   .section-cta .btn-form {
