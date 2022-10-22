@@ -660,6 +660,7 @@ button {
   font-weight: 600;
   font-size: 1.8rem;
   font-family: inherit;
+  outline: none;
 }
 
 .section-cta .btn-form:hover {
@@ -950,7 +951,7 @@ button {
     grid-template-columns: 1fr 1fr;
   }
   .features {
-    margin-top: 45rem;
+    margin-top: 40rem;
   }
 
   h2 {
@@ -961,13 +962,6 @@ button {
     grid-template-columns: 1fr;
     width: 80%;
     align-items: center;
-  }
-
-  .box-container .box img {
-    margin-left: 20rem;
-  }
-  .box-container .box .grocery {
-    margin-left: 14rem;
   }
 }
 
@@ -989,6 +983,11 @@ button {
   h2 {
     font-size: 3rem;
   }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1002,19 +1001,35 @@ button {
     margin-top: 16rem;
   }
 
-  .section-cta .btn-form {
-    margin-top: 69px;
-  }
   .footer {
     text-align: center;
   }
   .footer .box-container {
     grid-template-columns: 1fr;
+    width: 70%;
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 550px) {
   .features {
-    margin-top: 50rem;
+    margin-top: 57rem;
+  }
+
+  .cta-form {
+    row-gap: 2rem;
+  }
+}
+@media (max-width: 488px) {
+  .features {
+    margin-top: 60rem;
+  }
+}
+@media (max-width: 388px) {
+  .features {
+    margin-top: 80rem;
+  }
+
+  .contact {
+    display: none;
   }
 }
