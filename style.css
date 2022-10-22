@@ -1008,6 +1008,12 @@ button {
     grid-template-columns: 1fr;
     width: 70%;
   }
+
+  .modal {
+    max-width: 35rem;
+    background-color: #f3f3f3;
+    padding: 6rem 2rem;
+  }
 }
 
 @media (max-width: 550px) {
